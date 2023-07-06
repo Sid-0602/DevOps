@@ -5,7 +5,7 @@
 3. Filters and Redirection
 4. Users and Group.
 5. Sudo 
-6. Software management
+6. Software management.
 7. Services and Processes.
 8. Advanced commands.
 9. Server Managements.
@@ -48,3 +48,44 @@ Note: /bin is absolute path.
 
 
 ## VIM EDITOR
+
+Vim is a Unix text editor that's included in Linux, BSD, and macOS. It's known for being fast and efficient, in part because it's a small application that can run in a terminal (although it also has a graphical interface), but mostly because it can be controlled entirely with the keyboard with no need for menus or a mouse.
+
+VIM has 3 modes:
+    -- Command Mode.
+    -- Insert Mode. (edit mode).
+    -- extended command Mode.
+
+![Alt text](image-6.png)
+
+![Alt text](image-7.png)
+![Alt text](image-8.png)
+
+## Types of Files in Linux 
+
+In Linux, everything is considered as a file. In UNIX, seven standard file types are regular, directory, symbolic link, FIFO special, block special, character special, and socket. In Linux/UNIX, we have to deal with different file types to manage them efficiently.
+
+In Linux/UNIX, Files are mainly categorized into 3 parts:
+    -- Regular Files
+    -- Directory Files
+    -- Special Files
+
+    Note: ls -l command gives long listing of existing files in current dict.
+
+![Alt text](image-9.png)
+
+-- Making entire Directorty Structure : [mkdir -p [directory absolute path]].
+![Alt text](image-10.png)
+
+### Soft Link in file systems
+
+![Alt text](image-11.png)
+
+If we change the path of file, the link becomes dead.
+
+![Alt text](image-12.png)
+
+To remove the link:
+
+![Alt text](image-13.png)
+
