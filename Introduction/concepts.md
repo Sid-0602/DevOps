@@ -63,3 +63,5 @@ Hypervisors: A hypervisor, also known as a virtual machine monitor or VMM, is so
         An operating system installed on the hardware (Windows, Linux, macOS).
         A type 2 hypervisor software within that operating system.
         Guest virtual machine instances.
+    
+    Note: Type 1 hypervisors can be stacked together for other VM's.
