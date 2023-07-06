@@ -36,3 +36,15 @@ The file Structure of linux with the extensions is:
 
 Note: /bin is absolute path.
 
+4. Linux Command Syntax
+    -- [command] [options] [arguments]
+    eg: cp -r filetobecopied destinationPath
+
+    Note: [command] --help to get to more about an command.
+
+5. Most Used Linux commands to be used: https://www.javatpoint.com linux-commandsJavaPoint
+
+6. Note: Be very careful while using [rm -rf *] command, as it deletes all present directories in the current workig directories and it do not have any backup.
+
+
+## VIM EDITOR
