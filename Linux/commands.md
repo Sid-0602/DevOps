@@ -89,3 +89,19 @@ To remove the link:
 
 ![Alt text](image-13.png)
 
+## Filter & I/O redirections commands
+
+
+### grep command: 
+
+The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The pattern that is searched in the file is referred to as the regular expression (grep stands for global search for regular expression and print out). 
+
+Syntax: 
+
+grep [options] pattern [files]
+
+![Alt text](image-14.png)
+
+![Alt text](image-15.png)
+
+Note: [ var/log/ ] this path contains log files of system. So to trouble shoot the server errors, read the log files.
