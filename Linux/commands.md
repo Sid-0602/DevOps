@@ -104,4 +104,24 @@ grep [options] pattern [files]
 
 ![Alt text](image-15.png)
 
-Note: [ var/log/ ] this path contains log files of system. So to trouble shoot the server errors, read the log files.
+Note: 
+-- [ var/log/ ] this path contains log files of system. So to trouble shoot the server errors, read the log files.
+-- All the passwords of users and files/dict are stored in etc/psswd/ dirtrectory.
+
+-- awk command is used to cut the coloms sepereated by : or other sepeators.
+-- %s is used to replace characters with other ones.
+
+![Alt text](image-16.png)
+
+### Redirection Commands (I/O):
+
+#### Redirecting output to a file:  
+-- [ > ]: This is used to redirect the output of a command. 
+          eg: ls > sysinfo.txt will store the output of ls command inside the sysinfo file.
+-- [ >> ]: This will appened to output to exisiting file and it will not override   the output from previous command. 
+
+![Alt text](image-17.png)
+
+#### Redirecting output to "NULL: The output is dumped there but cannot be revieved. BLACK HOLE IN LINUX!!
+
+
