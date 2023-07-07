@@ -125,3 +125,16 @@ Note:
 #### Redirecting output to "NULL: The output is dumped there but cannot be revieved. BLACK HOLE IN LINUX!!
 
 
+### Piping : 
+
+A pipe is a form of redirection (transfer of standard output to some other destination) that is used in Linux and other Unix-like operating systems to send the output of one command/program/process to another command/program/process for further processing. The Unix/Linux systems allow the stdout of a command to be connected to the stdin of another command. You can make it do so by using the pipe character ‘|’. 
+
+We can write multiple commands in pipeline. Output of one command is given input to another in Pipelining.
+
+Counting the number of files in /etc directories.
+![Alt text](image-18.png)
+
+Searching files starting with host: 
+![Alt text](image-19.png)
+
+Note: Searcing is done using locate/find command.
