@@ -149,3 +149,49 @@ Here x is link to shadow file which holds encrypted password.
 -- root:/ is current user. bin/bash is login shell.
 ![Alt text](image-21.png)
 
+
+Note: /etc contains information about the Users, Groups and passwords.
+
+### Group Names in /etc/groups
+![Alt text](image-22.png)
+
+### Create Users and Groups:
+![Alt text](image-23.png)
+
+### Adding users into groups: 
+
+![Alt text](image-24.png)
+
+### Assigning password for users:
+![Alt text](image-25.png)
+
+### lsof command:
+The lsof (list open files) command returns the user processes that are actively using a file system. It is sometimes helpful in determining why a file system remains in use and cannot be unmounted.
+
+
+### Delete User: 
+![Alt text](image-26.png)
+
+## File Permissions:
+
+The ls command along with its -l (for long listing) option will show you metadata about your Linux files, including the permissions set on the file.
+
+![Alt text](image-27.png)
+
+In this example, you see two different listings. The first field of the ls -l output is a group of metadata that includes the permissions on each file. Here are the components of the vimrc listing:
+
+File type: -
+Permission settings: rw-r--r--
+Extended attributes: dot (.)
+User owner: root
+Group owner: root
+
+Eg: ![Alt text](image-28.png)
+
+here:
+
+'-' => filetype. (FIrst Bit it filetype).
+rw- => User (next 3 bits).
+'---' => groups (next 3 bits).
+'---' => Others (next 3 bits).
+Here, r->read, w->write and x->execute permission. 
