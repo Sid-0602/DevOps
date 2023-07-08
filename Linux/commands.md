@@ -138,3 +138,14 @@ Searching files starting with host:
 ![Alt text](image-19.png)
 
 Note: Searcing is done using locate/find command.
+
+## Users and Groups
+
+### Types of Users: 
+![](image-20.png)
+
+Here x is link to shadow file which holds encrypted password.
+-- 0:0 is user-id:group-id.
+-- root:/ is current user. bin/bash is login shell.
+![Alt text](image-21.png)
+
