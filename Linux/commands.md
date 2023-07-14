@@ -234,7 +234,60 @@ The command you use to change the security permissions on files is called “chm
 -->  Using chmod g+x [ file_name ] => This adds escecute permissions to file for groups.
 --> chmod g-x [ file_name ] deletes execute permission for the file for groups.
 
+#### For User permissions: 
 
+-->  Using chmod u+x [ file_name ] => This adds escecute permissions to file for groups.
+--> chmod u-x [ file_name ] deletes execute permission for the file for groups.
+
+
+![Alt text](image-35.png)
 
 ### The Octal notations: 
 ![Alt text](image-34.png)
+
+![Alt text](image-36.png)
+
+Eg: If we give full permission to user, group and no permission to others.
+![Alt text](image-37.png)
+
+## Sudo: 
+
+sudo (Super User DO) command in Linux is generally used as a prefix for some commands that only superusers are allowed to run. If you prefix any command with “sudo”, it will run that command with elevated privileges or in other words allow a user with proper permissions to execute a command as another user, such as the superuser. This is the equivalent of the “run as administrator” option in Windows. The option of sudo lets us have multiple administrators. 
+Sudo gives root user authorities to normal users.
+
+The syntax for 'sudo' command: 
+sudo -V | -h | -l | -v | -k | -K | -s | [ -H ] [-P ] [-S ] [ -b ] | 
+[ -p prompt ] [ -c class|- ] [ -a auth_type ] [-r role ] [-t type ] 
+[ -u username|#uid ] command
+
+
+-- sudo -i : This switches to root user.
+-- su - user1 : This switches to other user. 
+
+
+--> Usages of Suod: 
+There are many Linux commands that require sudo privileges to run but one must remember to use it with caution as they can modify critical system configurations and files. To avoid consequences, we should check twice before running commands. Commands like:
+
+Installing a new package: `sudo apt-get install package_name`
+Updating the system: `sudo apt-get update && sudo apt-get upgrade`
+Modifying system configurations: `sudo nano /etc/fstab`
+Starting a system service: `sudo systemctl start service_name`
+Stopping a system service: `sudo systemctl stop service_name`
+Creating a new user account: `sudo useradd username`
+Changing file permissions: `sudo chmod 755 file_name`
+
+Read more here: https://www.geeksforgeeks.org/sudo-command-in-linux-with-examples/
+
+## Packages: 
+
+### RPM Packages: (Red Hat Package Manager)
+
+Red Hat Package Manager or RPM is a free and open-source package management system for Linux. The RPM files use the .rpm file format.  RPM package manager was created to use with Red Hat Linux, but now it is supported by multiple Linux distributions such as Fedora, OpenSUSE, Ubuntu, etc.
+
+RPM packages can be cryptographically verified with GFG and MD5. They support automatic build-time dependency evaluation.
+
+
+#### TREE Package: 
+This gives us the directories and files in tree structure. 
+## Services: 
+
