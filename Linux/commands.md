@@ -188,10 +188,53 @@ Group owner: root
 
 Eg: ![Alt text](image-28.png)
 
+
+![Alt text](image-30.png)
+
 here:
 
-'-' => filetype. (FIrst Bit it filetype).
+![Alt text](image-32.png)
+
+'-' => filetype. (It can be directory/ link file).
 rw- => User (next 3 bits).
 '---' => groups (next 3 bits).
 '---' => Others (next 3 bits).
 Here, r->read, w->write and x->execute permission. 
+
+
+--> To check the permissions of directories: 
+ ![Alt text](image-31.png)
+
+### Security permissions in linux: 
+
+First, you must think of those nine characters as three sets of three characters (see the box at the bottom). Each of the three “rwx” characters refers to a different operation you can perform on the file.  
+
+---     ---     ---
+rwx     rwx     rwx
+user    group   other 
+
+
+### Reading the security permissions
+For example:  “rw-  r-x  r–“
+“rw-“: the first three characters `rw-`. This means that the owner of the file can “read” it (look at its contents) and “write” it (modify its contents). we cannot execute it because it is not a program but a text file. 
+“r-x”: the second set of three characters “r-x”. This means that the members of the group can only read and execute the files. 
+“r–“: The final three characters “r–” show the permissions allowed to other users who have a UserID on this Linux system. This means anyone in our Linux world can read but cannot modify or execute the files’ contents.  
+
+### Changing security permissions
+
+The command you use to change the security permissions on files is called “chmod“, which stands for “change mode” because the nine security characters are collectively called the security “mode” of the file. 
+
+#### For other (o) group: 
+--> Using chmod o+x [ file_name ] => This adds execute permission to the file.
+--> chmod o-x [ file_name ] deletes execute permission for the file.
+
+![Alt text](image-33.png)
+
+#### For group permissions :
+-->  Using chmod g+x [ file_name ] => This adds escecute permissions to file for groups.
+--> chmod g-x [ file_name ] deletes execute permission for the file for groups.
+
+
+
+### The Octal notations: 
+![Alt text](image-34.png)
