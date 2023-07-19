@@ -315,3 +315,44 @@ Is-active and Is-enabled for a service:
 Config file for apache 2: 
 ![Alt text](image-43.png)
 
+## Processes: 
+
+### top command: 
+![Alt text](image-44.png)
+
+### ps aux: 
+![Alt text](image-45.png)
+
+### ps -ef : 
+It is same as ps aux but also displays PPID (Parent Process ID). 
+![Alt text](image-46.png)
+
+### kill, force kill and orphan processes: 
+![Alt text](image-47.png)
+
+
+## Archiving: 
+When we need to store/take backup of files and directories, archiving is done. 
+
+### tar command: 
+The Linux ‘tar’ stands for tape archive, is used to create Archive and extract the Archive files. tar command in Linux is one of the important command which provides archiving functionality in Linux. 
+
+Syntax: 
+
+tar [options] [archive-file] [file or directory to be archived]
+
+Options: 
+-c : Creates Archive 
+-x : Extract the archive 
+-f : creates archive with given filename 
+-t : displays or lists files in archived file 
+-u : archives and adds to an existing archive file 
+-v : Displays Verbose Information 
+-A : Concatenates the archive files 
+-z : zip, tells tar command that creates tar file using gzip 
+-j : filter archive tar file using tbzip 
+-W : Verify a archive file 
+-r : update or add file or directory in already existed .tar file 
+
+eg: 
+![Alt text](image-48.png)
