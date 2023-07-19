@@ -288,6 +288,30 @@ RPM packages can be cryptographically verified with GFG and MD5. They support au
 
 
 #### TREE Package: 
-This gives us the directories and files in tree structure. 
+This gives us the directories and files in tree structure. In Linux, a tree is defined as a recursive directory listing program which generates a depth-indented file's list. Without any parameters, the tree lists the files in the present directory. At the time directory parameters are given, the tree alternately lists each file per directory found in the given directories. When the list of each directory and file is complete, then the tree will return the total number of directories and files listed. Various options are available in order to modify the character which is used in the output and to use color.
+
+eg: 
+![Alt text](image-38.png)
+
 ## Services: 
+
+
+#### HTTPD (Hyper-text-transfer-protocol deamon)
+Apache HTTPD is an HTTP server daemon produced by the Apache Foundation. It is a piece of software that listens for network requests (which are expressed using the Hypertext Transfer Protocol) and responds to them.
+
+Note: 
+httpd and Apache 2 HTTP Server: 
+They are the same application - just that some Linux distributions refer to it differently within package managers and config files. RedHat-based distros (CentOS, Fedora) refer to it as httpd while Debian-based distros (Ubuntu) refer to it as apache
+
+#### Apache 2 HTTP Server services (httpd in RPM based ubuntu): 
+
+![Alt text](image-39.png)
+![Alt text](image-40.png)
+![Alt text](image-41.png)
+
+Is-active and Is-enabled for a service: 
+![Alt text](image-42.png)
+
+Config file for apache 2: 
+![Alt text](image-43.png)
 
