@@ -32,9 +32,28 @@ print(tools1)
 print("")
 
 print("This is a dictonary")
-devops = {"skills":"DevOps",
-          "Year":2023,
-          "Tech": ""}
+
+
+
+devops={
+    
+    "skills":"DevOps",
+    
+    "Year":2023,
+    "Tech":{
+          "Cloud": "AWS",
+          "Containers":"K8s",
+          "CICD": "Jenkins",
+          "GitOps":[
+              "Gitlab",
+              "ArgoCD",
+              "Tekton"
+        ]
+    }
+}
+
+
+
 print(devops)
 print(devops["skills"])
 print(devops["Year"])

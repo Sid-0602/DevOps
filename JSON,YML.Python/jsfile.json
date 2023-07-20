@@ -1,0 +1,15 @@
+{
+    "skills":"DevOps",
+    
+    "Year":2023,
+    "Tech":{
+          "Cloud": "AWS",
+          "Containers":"K8s",
+          "CICD": "Jenkins",
+          "GitOps":[
+              "Gitlab",
+              "ArgoCD",
+              "Tekton"
+        ]
+    }
+}    
