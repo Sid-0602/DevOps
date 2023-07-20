@@ -24,3 +24,30 @@ eg: <{
         ]
     }
 }>
+![Alt text](image-2.png)
+
+### YAML 
+
+YAML is a human-readable data serialization language that is often used for writing configuration files. Depending on whom you ask, YAML stands for yet another markup language or YAML ain’t markup language (a recursive acronym), which emphasizes that YAML is for data, not documents. 
+
+eg: 
+
+<
+devops: 
+
+  skills: DevOps
+    
+  Year: 2023
+  Tech:
+        Cloud: AWS
+        Containers: K8s
+        CICD: Jenkins
+        GitOps:
+            -  Gitlab
+            -  ArgoCD
+            -  Tekton
+>
+
+The equivalent of the above YAML code is: 
+![Alt text](image-3.png)
+        
