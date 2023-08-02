@@ -7,4 +7,4 @@
   ### Unit 3: Linux Servers, JSON and YAML.
   ### Unit 4: Networking and Containers.
   ### Unit 5: Bash Scripting, Python Scripting. 
-  ### Unit 6: AWS Cloud.
+  ### Unit 6: AWS Cloud and Deployment.
