@@ -1,0 +1,39 @@
+
+# YAML File overview: 
+
+courses: 
+  course_name: NodeJS course
+  version: 18.8
+  price: &price 120000
+  is_public: true
+  release_date: 2023-11-26 12:22:00
+  pre_enroll: null 
+  tags: 
+    - NodeJS
+    - Web Dev
+    - Express
+  course_ta: ["Siddhant J","Siddharth S","Sahil L"]
+  ta_details: 
+    - name: "Siddhant J"
+      email: "sidbnjadhav@gmail.com"
+      role: "Backend Engineer"
+    - name: "Siddharth S"
+      email: "sssutar@gmail.com"
+      role: "Backend and Deployment"
+    - {name: "Sahil L", email: "sahil@gmail.com", role: "Django Engineer"}
+  short_desc: >
+    here is desc for NodeJS 
+    course.
+  long_desc: |
+    now we can store all indentation with Pipeline "|" symbol. 
+    Yes, 
+      it does 
+    that.
+  process_payments: *price
+
+  adv: &adv
+    mykey: myval
+
+  another_adv: 
+    one: two
+    <<: *adv
